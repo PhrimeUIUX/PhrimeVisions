@@ -68,6 +68,310 @@
           <p>Visual Storytelling</p>
         </footer>
       </section>
+
+      <section class="section showcase" id="showcase" aria-label="Color Grading and Visual Craft Showcase">
+        <header class="showcase-nav" data-reveal>
+          <div class="showcase-nav-left">
+            <span class="showcase-status-indicator" aria-hidden="true"></span>
+            <p>02 // POST-PRODUCTION</p>
+            <span class="showcase-nav-sep" aria-hidden="true">/</span>
+            <p class="showcase-subhead">COLOR SCIENCE &amp; MASTERING</p>
+          </div>
+          <button class="hero-enter" id="to-hero-btn" type="button" aria-label="Return to index">
+            <span>Index 01</span>
+          </button>
+        </header>
+
+        <div class="showcase-header" data-reveal>
+          <div class="showcase-kicker-wrap">
+            <span class="showcase-kicker">CINEMATIC GRADE LAB</span>
+          </div>
+          <h2 class="showcase-title">RAW SENSOR <span class="text-accent">&rarr;</span> MASTER PRINT</h2>
+          <p class="showcase-copy">
+            Drag the interactive wiper on each frame to inspect the dynamic range, color separation, and film emulation between raw camera profiles and our master grades.
+          </p>
+        </div>
+
+        <div class="showcase-grid" id="showcase-grid" data-reveal>
+          <!-- CARD 01 -->
+          <article class="wiper-card" data-card="1">
+            <header class="wiper-card-head">
+              <div class="card-meta-top">
+                <span class="card-index">01</span>
+                <span class="card-tag">COMMERCIAL FILM</span>
+              </div>
+              <h3 class="card-title">NOIR NEON</h3>
+              <p class="card-specs">ARRI ALEXA 35 &bull; ARRI LOG-C4 &rarr; KODAK 2383</p>
+            </header>
+
+            <div class="wiper-viewport" style="--wiper-pos: 50%;" role="region" aria-label="Before and after comparison for Noir Neon">
+              <!-- Camera Viewfinder HUD -->
+              <div class="viewfinder-hud viewfinder-hud-top" aria-hidden="true">
+                <span class="hud-tag hud-rec"><span class="hud-blink"></span>REC</span>
+                <span class="hud-tag">TC 01:24:08:19</span>
+                <span class="hud-tag">FPS 24.00</span>
+              </div>
+              <div class="viewfinder-hud viewfinder-hud-bottom" aria-hidden="true">
+                <span class="hud-tag">ISO 800</span>
+                <span class="hud-tag">5600K</span>
+                <span class="hud-tag">LUT // NOIR-35</span>
+              </div>
+
+              <!-- AFTER Layer (Graded) -->
+              <div class="wiper-layer wiper-layer-after">
+                <img
+                  src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80"
+                  alt="Noir Neon After Phrime Color Grade"
+                  class="wiper-img wiper-img-after"
+                  loading="lazy"
+                />
+                <div class="wiper-grade-tint grade-tint-neon" aria-hidden="true"></div>
+                <div class="wiper-badge wiper-badge-after">
+                  <span class="badge-dot badge-dot-after"></span>
+                  <span>PHRIME GRADE</span>
+                </div>
+              </div>
+
+              <!-- BEFORE Layer (RAW Log) -->
+              <div class="wiper-layer wiper-layer-before">
+                <img
+                  src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80"
+                  alt="Noir Neon Before RAW Log-C4"
+                  class="wiper-img wiper-img-before"
+                  loading="lazy"
+                />
+                <div class="wiper-badge wiper-badge-before">
+                  <span class="badge-dot badge-dot-before"></span>
+                  <span>RAW LOG-C4</span>
+                </div>
+              </div>
+
+              <!-- Divider line & Handle -->
+              <div class="wiper-divider" aria-hidden="true">
+                <div class="wiper-line"></div>
+                <div class="wiper-handle" title="Drag to slide">
+                  <iconify-icon icon="hugeicons:arrow-left-right-01" width="16" height="16"></iconify-icon>
+                </div>
+              </div>
+
+              <!-- Accessible Range Input -->
+              <input
+                type="range"
+                class="wiper-slider"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="Slide to compare Noir Neon RAW versus Phrime Grade"
+              />
+            </div>
+
+            <footer class="wiper-card-foot">
+              <p class="card-desc">Highlight roll-off compression, deep shadow saturation, and custom neon halation emulation.</p>
+              <div class="card-pills">
+                <span class="pill">17+ STOPS</span>
+                <span class="pill">KODAK 2383</span>
+                <span class="pill">35MM GRAIN</span>
+              </div>
+              <div class="wiper-quick-actions">
+                <button type="button" class="quick-btn" data-action="view-raw">View RAW</button>
+                <button type="button" class="quick-btn is-active" data-action="reset-wiper">50/50</button>
+                <button type="button" class="quick-btn" data-action="view-grade">View Grade</button>
+              </div>
+            </footer>
+          </article>
+
+          <!-- CARD 02 -->
+          <article class="wiper-card" data-card="2">
+            <header class="wiper-card-head">
+              <div class="card-meta-top">
+                <span class="card-index">02</span>
+                <span class="card-tag">NARRATIVE FEATURE</span>
+              </div>
+              <h3 class="card-title">SOLARIS DUSK</h3>
+              <p class="card-specs">RED V-RAPTOR 8K &bull; REDCODE RAW &rarr; 70MM PRINT</p>
+            </header>
+
+            <div class="wiper-viewport" style="--wiper-pos: 50%;" role="region" aria-label="Before and after comparison for Solaris Dusk">
+              <!-- Camera Viewfinder HUD -->
+              <div class="viewfinder-hud viewfinder-hud-top" aria-hidden="true">
+                <span class="hud-tag hud-rec"><span class="hud-blink"></span>REC</span>
+                <span class="hud-tag">TC 02:08:14:02</span>
+                <span class="hud-tag">FPS 24.00</span>
+              </div>
+              <div class="viewfinder-hud viewfinder-hud-bottom" aria-hidden="true">
+                <span class="hud-tag">ISO 640</span>
+                <span class="hud-tag">4800K</span>
+                <span class="hud-tag">LUT // SOLARIS-70</span>
+              </div>
+
+              <!-- AFTER Layer (Graded) -->
+              <div class="wiper-layer wiper-layer-after">
+                <img
+                  src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1200&q=80"
+                  alt="Solaris Dusk After Phrime Color Grade"
+                  class="wiper-img wiper-img-after"
+                  loading="lazy"
+                />
+                <div class="wiper-grade-tint grade-tint-dusk" aria-hidden="true"></div>
+                <div class="wiper-badge wiper-badge-after">
+                  <span class="badge-dot badge-dot-after"></span>
+                  <span>PHRIME GRADE</span>
+                </div>
+              </div>
+
+              <!-- BEFORE Layer (RAW Log) -->
+              <div class="wiper-layer wiper-layer-before">
+                <img
+                  src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1200&q=80"
+                  alt="Solaris Dusk Before REDCODE RAW"
+                  class="wiper-img wiper-img-before"
+                  loading="lazy"
+                />
+                <div class="wiper-badge wiper-badge-before">
+                  <span class="badge-dot badge-dot-before"></span>
+                  <span>REDCODE RAW</span>
+                </div>
+              </div>
+
+              <!-- Divider line & Handle -->
+              <div class="wiper-divider" aria-hidden="true">
+                <div class="wiper-line"></div>
+                <div class="wiper-handle" title="Drag to slide">
+                  <iconify-icon icon="hugeicons:arrow-left-right-01" width="16" height="16"></iconify-icon>
+                </div>
+              </div>
+
+              <!-- Accessible Range Input -->
+              <input
+                type="range"
+                class="wiper-slider"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="Slide to compare Solaris Dusk RAW versus Phrime Grade"
+              />
+            </div>
+
+            <footer class="wiper-card-foot">
+              <p class="card-desc">Atmospheric haze density, golden hour highlight rolloff, and deep cobalt sky gradation.</p>
+              <div class="card-pills">
+                <span class="pill">8K SENSOR</span>
+                <span class="pill">70MM PRINT</span>
+                <span class="pill">AMBER HALATION</span>
+              </div>
+              <div class="wiper-quick-actions">
+                <button type="button" class="quick-btn" data-action="view-raw">View RAW</button>
+                <button type="button" class="quick-btn is-active" data-action="reset-wiper">50/50</button>
+                <button type="button" class="quick-btn" data-action="view-grade">View Grade</button>
+              </div>
+            </footer>
+          </article>
+
+          <!-- CARD 03 -->
+          <article class="wiper-card" data-card="3">
+            <header class="wiper-card-head">
+              <div class="card-meta-top">
+                <span class="card-index">03</span>
+                <span class="card-tag">MUSIC / FASHION</span>
+              </div>
+              <h3 class="card-title">CHRONOS AURA</h3>
+              <p class="card-specs">SONY VENICE 2 &bull; S-LOG3 &rarr; PHRIME MASTER</p>
+            </header>
+
+            <div class="wiper-viewport" style="--wiper-pos: 50%;" role="region" aria-label="Before and after comparison for Chronos Aura">
+              <!-- Camera Viewfinder HUD -->
+              <div class="viewfinder-hud viewfinder-hud-top" aria-hidden="true">
+                <span class="hud-tag hud-rec"><span class="hud-blink"></span>REC</span>
+                <span class="hud-tag">TC 03:19:45:11</span>
+                <span class="hud-tag">FPS 24.00</span>
+              </div>
+              <div class="viewfinder-hud viewfinder-hud-bottom" aria-hidden="true">
+                <span class="hud-tag">ISO 3200</span>
+                <span class="hud-tag">3200K</span>
+                <span class="hud-tag">LOOK // AURA-V</span>
+              </div>
+
+              <!-- AFTER Layer (Graded) -->
+              <div class="wiper-layer wiper-layer-after">
+                <img
+                  src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1200&q=80"
+                  alt="Chronos Aura After Phrime Color Grade"
+                  class="wiper-img wiper-img-after"
+                  loading="lazy"
+                />
+                <div class="wiper-grade-tint grade-tint-aura" aria-hidden="true"></div>
+                <div class="wiper-badge wiper-badge-after">
+                  <span class="badge-dot badge-dot-after"></span>
+                  <span>PHRIME GRADE</span>
+                </div>
+              </div>
+
+              <!-- BEFORE Layer (RAW Log) -->
+              <div class="wiper-layer wiper-layer-before">
+                <img
+                  src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1200&q=80"
+                  alt="Chronos Aura Before Sony S-Log3"
+                  class="wiper-img wiper-img-before"
+                  loading="lazy"
+                />
+                <div class="wiper-badge wiper-badge-before">
+                  <span class="badge-dot badge-dot-before"></span>
+                  <span>SONY S-LOG3</span>
+                </div>
+              </div>
+
+              <!-- Divider line & Handle -->
+              <div class="wiper-divider" aria-hidden="true">
+                <div class="wiper-line"></div>
+                <div class="wiper-handle" title="Drag to slide">
+                  <iconify-icon icon="hugeicons:arrow-left-right-01" width="16" height="16"></iconify-icon>
+                </div>
+              </div>
+
+              <!-- Accessible Range Input -->
+              <input
+                type="range"
+                class="wiper-slider"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="Slide to compare Chronos Aura RAW versus Phrime Grade"
+              />
+            </div>
+
+            <footer class="wiper-card-foot">
+              <p class="card-desc">Warm skin tone protection, specular edge separation, and rich cinematic contrast carve.</p>
+              <div class="card-pills">
+                <span class="pill">DUAL ISO</span>
+                <span class="pill">SKIN VECTOR</span>
+                <span class="pill">ANAMORPHIC</span>
+              </div>
+              <div class="wiper-quick-actions">
+                <button type="button" class="quick-btn" data-action="view-raw">View RAW</button>
+                <button type="button" class="quick-btn is-active" data-action="reset-wiper">50/50</button>
+                <button type="button" class="quick-btn" data-action="view-grade">View Grade</button>
+              </div>
+            </footer>
+          </article>
+        </div>
+
+        <footer class="showcase-foot" data-reveal>
+          <div class="showcase-foot-info">
+            <span class="foot-live-indicator" aria-hidden="true"></span>
+            <p>Every frame processed through custom node trees in DaVinci Resolve Studio</p>
+          </div>
+          <button class="hero-cta showcase-cta" id="showcase-cta" type="button">
+            <span class="hero-cta-mark" aria-hidden="true"></span>
+            <span class="hero-cta-copy">
+              <span class="hero-cta-label">Grade Your Project</span>
+              <span class="hero-cta-meta">Start intake form</span>
+            </span>
+            <span class="hero-cta-arrow" aria-hidden="true">
+              <iconify-icon icon="hugeicons:arrow-up-right-01" width="20" height="20"></iconify-icon>
+            </span>
+          </button>
+        </footer>
+      </section>
     </main>
 
     <div class="inquiry-backdrop" id="inquiry-backdrop" hidden></div>
@@ -154,9 +458,9 @@
     </aside>
 
     <div class="slide-nav" id="slide-nav" hidden>
-      <button id="prev-btn" type="button" disabled>Prev</button>
-      <p>1 / 1</p>
-      <button id="next-btn" type="button" disabled>Next</button>
+      <button id="prev-btn" type="button" aria-label="Previous section" disabled>Prev</button>
+      <p id="slide-counter" aria-live="polite">01 / 02</p>
+      <button id="next-btn" type="button" aria-label="Next section">Next</button>
     </div>
 
     <script type="module" src="./script.js"></script>
